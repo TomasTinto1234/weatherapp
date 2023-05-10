@@ -20,7 +20,6 @@ function OneCard () {
         fetch (`https://api.openweathermap.org/data/2.5/onecall?lat=-34.6132&lon=-58.3772&exclude=hourly,minutely,alerts&lang=apikey=${apikey}&units=metric%20401%20(U`)
         .then(res => res.json())
         .then(recurso => {
-            console.log(recurso)
             if(recurso.current){
                 const ciudad = [{
                     min: Math.round(recurso.daily[0].temp.min),
@@ -112,35 +111,35 @@ else {
                 <button className={s.closeButton}>x</button>
             </Link>
             <p className={s.h1}> {name}</p>
-            {/* <div className={s.info}>        
-                <p className={s.h2}>{city[0].temp}°</p>
+            <div className={s.info}>        
+                <p className={s.h2}>{name}°</p>
                     <div >
-                        <img src={`http://openweathermap.org/img/wn/${city[0].img}@2x.png`} alt='imagen del clima' className={s.imagen}/>        
-                        <p className={s.time}> {city[0].description} </p>
+                        <img src={`http://openweathermap.org/img/wn/${name}@2x.png`} alt={name} className={s.imagen}/>        
+                        <p className={s.time}> {name} </p>
                     </div>
                     <div className={s.elementos}>
                         <div className={s.temp}> 
                             <div>
                                 <h4 className={s.h4}>Min</h4>
-                                <h3 className={s.h3}>{city[0].min}°</h3>
+                                <h3 className={s.h3}>{name}°</h3>
                             </div>
                             <div>
                                 <h4 className={s.h4}>Max</h4>
-                                <h3 className={s.h3}>{city[0].max}°</h3>
+                                <h3 className={s.h3}>{name}°</h3>
                             </div>
                         </div>
                         <div className={s.temp}>
                             <div>
                                 <img src={Humedad} alt='Humedad' className={s.humedad} />
-                                <p className={s.h4}>{city[0].humidity}%</p>
+                                <p className={s.h4}>{name}%</p>
                             </div>
                             <div>
                                 <img src={st} alt='Sens term' className={s.humedad}/>
-                                <p className={s.h4}>{city[0].sTerm}°</p>
+                                <p className={s.h4}>{name}°</p>
                             </div>
                         </div>
                     </div>
-        </div> */}
+        </div>
         {/* <div className={s.cards}>
             {city[1].map (c => {return (
                 < DailyCard 
