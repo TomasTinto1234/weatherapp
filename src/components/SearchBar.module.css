@@ -1,0 +1,22 @@
+#addbutton{
+    border-radius: 5px;
+    background-color: transparent;
+    color:  black
+  }
+  #addbutton:hover{
+    color:black;
+    background-color: #085662;
+  }
+  input{
+    border: 2px solid gray;
+    border-radius: 5px;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+  }
+.form{
+  display: flex;
+  /* justify-content: end; */
+  /* align-items: center; */
+  padding: 0.2rem 0.2rem;
+  right: 25%;
+}

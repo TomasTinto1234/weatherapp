@@ -1,0 +1,39 @@
+#logoClima {
+  margin-right: 1.5rem;
+  width: 4.5rem;
+  /* border-radius: 0.5rem; */
+  background-color: wheat;
+}
+
+.frase {
+  color: #085662;
+}
+
+.nav{
+  background-color: wheat;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.link{
+  color: #085662;
+}
+.link:hover{
+  text-decoration:solid ;
+  cursor: pointer;
+  color: #085662;
+}
+
+@media (max-width:480px) {
+  .nav{
+    flex-wrap: wrap;
+    flex-direction: column;
+    display: flex;
+  }
+  #logoClima {
+    margin: 0.5rem;
+  }
+}
+
+

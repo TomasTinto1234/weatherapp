@@ -1,0 +1,20 @@
+body, .dia, .noche {
+    margin: 0;
+    font-family: cursive;
+    color: wheat;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url('https://images.unsplash.com/photo-1601383124525-9772976a8b80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Y2llbG8lMjBmb25kbyUyMGRlJTIwcGFudGFsbGF8ZW58MHx8MHx8&w=1000&q=80')
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+}
+body::-webkit-scrollbar-track {
+    background-color: #62080e;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: rgba(245, 222, 179, 0.823);   
+    border-radius: 20px;      
+}

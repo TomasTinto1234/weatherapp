@@ -1,0 +1,54 @@
+.container{
+    position: relative;
+    border-radius: 3rem;
+    border: thin solid black;
+    width: 2.5rem;
+    height: 1.3rem;
+    background-color: white;
+}
+
+.ball{
+    border: none;
+    border-radius: 3rem;
+    background-color: goldenrod;
+    position: absolute;
+    width: 1.2rem;
+    height: 1.2rem;
+    left: 0;
+}
+
+.btn{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    border-radius: 3rem;
+}
+
+.on{
+    animation: on 0.3s linear both;
+}
+
+.off{
+    animation: off 0.3s linear both;
+}
+
+@keyframes on {
+0%{
+    transform: translateX(0);
+}
+100%{
+    transform: translateX(100%);
+}
+}
+
+@keyframes off {
+0%{
+    transform: translateX(100%);
+}
+100%{
+    transform: translateX(0%);
+}
+}
